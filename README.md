@@ -20,3 +20,7 @@ ii "C:\Program Files\GitHub CLI\"
 ```ps
 dir "C:\Program Files\GitHub CLI\"
 ```
+### To run gh.exe directly
+```ps
+& "C:\Program Files\GitHub CLI\gh.exe" --version
+```
