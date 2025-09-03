@@ -8,3 +8,7 @@ Get-ChildItem | Sort-Object LastWriteTime -Descending
 ```ps
 Get-ChildItem | Sort-Object LastWriteTime -Descending | Select-Object -First 5
 ```
+### Include subfolders (recursive)
+```ps
+Get-ChildItem -Recurse | Sort-Object LastWriteTime -Descending | Select-Object FullName, LastWriteTime -First 10
+```
