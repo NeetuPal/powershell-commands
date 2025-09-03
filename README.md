@@ -16,3 +16,7 @@ Get-ChildItem -Recurse | Sort-Object LastWriteTime -Descending | Select-Object F
 ```ps
 ii "C:\Program Files\GitHub CLI\"
 ```
+### To check if gh.exe exists in that folder
+```ps
+dir "C:\Program Files\GitHub CLI\"
+```
