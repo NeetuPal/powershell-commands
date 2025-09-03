@@ -12,3 +12,7 @@ Get-ChildItem | Sort-Object LastWriteTime -Descending | Select-Object -First 5
 ```ps
 Get-ChildItem -Recurse | Sort-Object LastWriteTime -Descending | Select-Object FullName, LastWriteTime -First 10
 ```
+### ii = Invoke-Item, like double-clicking in Explorer
+```ps
+ii "C:\Program Files\GitHub CLI\"
+```
