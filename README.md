@@ -24,3 +24,7 @@ dir "C:\Program Files\GitHub CLI\"
 ```ps
 & "C:\Program Files\GitHub CLI\gh.exe" --version
 ```
+### Find where gh is installed
+```ps
+where.exe gh
+```
