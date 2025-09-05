@@ -32,3 +32,7 @@ where.exe gh
 ```ps
 msiexec.exe /i https://awscli.amazonaws.com/AWSCLIV2.msi
 ```
+### Simple view (all drives) 
+```ps
+Get-PSDrive -PSProvider FileSystem
+```
