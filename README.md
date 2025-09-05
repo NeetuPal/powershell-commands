@@ -28,3 +28,7 @@ dir "C:\Program Files\GitHub CLI\"
 ```ps
 where.exe gh
 ```
+### install (or update) AWS CLI v2 on Windows using the MSI installer directly from the URL.
+```ps
+msiexec.exe /i https://awscli.amazonaws.com/AWSCLIV2.msi
+```
