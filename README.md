@@ -24,7 +24,6 @@ dir "C:\Program Files\GitHub CLI\"
 ```ps
 Get-ChildItem -Path 'C:\Users\Naresh Pal\Downloads\' -Directory
 ```
-```
 ### To run gh.exe directly
 ```ps
 & "C:\Program Files\GitHub CLI\gh.exe" --version
