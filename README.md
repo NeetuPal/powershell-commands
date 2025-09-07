@@ -20,6 +20,11 @@ ii "C:\Program Files\GitHub CLI\"
 ```ps
 dir "C:\Program Files\GitHub CLI\"
 ```
+### That lists only the immediate folders in Downloads
+```ps
+Get-ChildItem -Path 'C:\Users\Naresh Pal\Downloads\' -Directory
+```
+```
 ### To run gh.exe directly
 ```ps
 & "C:\Program Files\GitHub CLI\gh.exe" --version
