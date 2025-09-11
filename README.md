@@ -1,4 +1,4 @@
-# powershell_cheatSheet
+# powershell-commands
 
 ### List files & folders by last modified date (descending)
 ```ps
@@ -47,4 +47,8 @@ Remove-Item .\terraform-project.zip -Force
 ### Extract a .zip file
 ```ps
 Expand-Archive -Path .\terraform-project.zip -DestinationPath .\terraform-project -Force
+```
+### Move the file into the inner folder
+```ps
+Get-ChildItem .\terraform-project
 ```
