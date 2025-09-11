@@ -52,3 +52,14 @@ Expand-Archive -Path .\terraform-project.zip -DestinationPath .\terraform-projec
 ```ps
 Get-ChildItem .\terraform-project
 ```
+### How to Run
+
+Save the above as DevSetup.ps1 in D:\ (or any folder).
+
+Open PowerShell as Administrator.
+
+Run:
+```ps
+Set-ExecutionPolicy Bypass -Scope Process -Force
+.\DevSetup.ps1
+```
