@@ -32,11 +32,19 @@ Get-ChildItem -Path 'C:\Users\Naresh Pal\Downloads\' -Directory
 ```ps
 where.exe gh
 ```
-### install (or update) AWS CLI v2 on Windows using the MSI installer directly from the URL.
+### Install (or update) AWS CLI v2 on Windows using the MSI installer directly from the URL.
 ```ps
 msiexec.exe /i https://awscli.amazonaws.com/AWSCLIV2.msi
 ```
 ### Simple view (all drives) 
 ```ps
 Get-PSDrive -PSProvider FileSystem
+```
+### Delete zip file without confirmation
+```ps
+Remove-Item .\terraform-project.zip -Force
+```
+### Extract a .zip file
+```ps
+Expand-Archive -Path .\terraform-project.zip -DestinationPath .\terraform-project -Force
 ```
