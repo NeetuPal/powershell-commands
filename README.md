@@ -71,3 +71,11 @@ $env:Path -split ";" | ForEach-Object { [PSCustomObject]@{ Index = ++$i; Path = 
 ```ps
 $env:Path -split ";" | Where-Object { $_ -ilike "*git*" }
 ```
+### Goto root directory
+```sh
+Set-Location \
+```
+### Goto user home directory
+```sh
+Set-Location $env:USERPROFILE
+```
