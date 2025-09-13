@@ -63,3 +63,7 @@ Run:
 Set-ExecutionPolicy Bypass -Scope Process -Force
 .\DevSetup.ps1
 ```
+### Environment variable in tabular format with row numbers
+```ps
+$env:Path -split ";" | ForEach-Object { [PSCustomObject]@{ Index = ++$i; Path = $_ } } | Format-Table -AutoSize
+```
