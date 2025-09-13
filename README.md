@@ -67,3 +67,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force
 ```ps
 $env:Path -split ";" | ForEach-Object { [PSCustomObject]@{ Index = ++$i; Path = $_ } } | Format-Table -AutoSize
 ```
+### Environment variable searching insensitively
+```ps
+$env:Path -split ";" | Where-Object { $_ -ilike "*git*" }
+```
