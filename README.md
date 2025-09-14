@@ -79,3 +79,7 @@ Set-Location \
 ```sh
 Set-Location $env:USERPROFILE
 ```
+### To get absolute location of file
+```sh
+(Get-Item .\Generate-Terraform-Graph.ps1).FullName
+```
